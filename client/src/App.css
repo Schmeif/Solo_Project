@@ -3,3 +3,51 @@ body {
 }
 
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-1200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.heading {
+  background-color: black;
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+}
+
+.bigbutton {
+  background-color: black;
+  text-decoration: none;
+  color: aquamarine;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  font-size: 50px;
+  width: fit-content;
+  animation-name: slideInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+}
